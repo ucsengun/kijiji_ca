@@ -1,7 +1,7 @@
 Feature: Nobel Yayin İnsan Kaynakları
 
 
-  Scenario: İnsan Kaynakları Sayfası Kayıt Formu Geçersiz Ad Hata Doğrulaması
+  Scenario: Ürünü Favorilere Ekleme Doğrulaması
     Given Nobel Yayin websitesine eriş.
     And Websayfasını aşağıya doğru kaydır.
     And Ana sayfanın site haritası kısmında yer alan İnsan Kaynakları butonuna tıkla.

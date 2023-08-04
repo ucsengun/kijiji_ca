@@ -6,10 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.DriverClass;
 import utilities.MyMethods;
 
-import java.util.List;
-
-public class NobelYayin_POM extends MyMethods {
-    public NobelYayin_POM() {
+public class Kijiji_POM extends MyMethods {
+    public Kijiji_POM() {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
@@ -45,8 +43,8 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement mailFriend;
     @FindBy(xpath = "//button[@aria-label='Print this ad']")
     private WebElement print;
-    @FindBy(xpath = "//input[@name='ogrenimLisans']")
-    private WebElement okulAdiLisans;
+    @FindBy(xpath = "//button[@type='submit'][normalize-space()='Send message']")
+    private WebElement sendMessage;
     @FindBy (xpath = "//input[@name='ogrenimLisansBolum']")
     private WebElement bolumLisans;
     @FindBy(xpath = "//input[@name='ogrenimLisansTarih']")
@@ -117,8 +115,8 @@ public class NobelYayin_POM extends MyMethods {
         return print;
     }
 
-    public WebElement getOkulAdiLisans() {
-        return okulAdiLisans;
+    public WebElement getSendMessage() {
+        return sendMessage;
     }
 
 

@@ -1,11 +1,11 @@
 package step_definitions;
 
 import io.cucumber.java.en.Given;
-import pages.NobelYayin_POM;
+import pages.Kijiji_POM;
 import utilities.DriverClass;
 
 public class NobelYayin_Login {
-    NobelYayin_POM ny =new NobelYayin_POM();
+    Kijiji_POM ny =new Kijiji_POM();
     @Given("Nobel Yayin login")
     public void NobelYayinLogin() {
         DriverClass.getDriver().get("https://www.nobelyayin.com/");

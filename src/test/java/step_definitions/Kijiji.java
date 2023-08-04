@@ -5,12 +5,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.JavascriptExecutor;
-import pages.NobelYayin_POM;
+import pages.Kijiji_POM;
 import utilities.DriverClass;
 
-public class NobelYayin {
+public class Kijiji {
 
-    NobelYayin_POM ny = new NobelYayin_POM();
+    Kijiji_POM ny = new Kijiji_POM();
 
     private JavascriptExecutor jsExecutor;
     //private WebDriver driver;

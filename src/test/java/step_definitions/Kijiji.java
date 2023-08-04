@@ -5,6 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import pages.Kijiji_POM;
 import utilities.DriverClass;
@@ -64,7 +66,10 @@ public class Kijiji {
     }
 
     @And("Açılan sayfadaki mesaj gönder butonuna tıkla.")
-    public void açılanSayfadakiMesajGönderButonunaTıkla() {
+    public void açılanSayfadakiMesajGönderButonunaTıkla() throws InterruptedException {
+      //  Thread.sleep(3000);
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) DriverClass.getDriver();
+        jsExecutor.executeScript("arguments[0].click();", ny.getSendMessage());
         ny.clickMethod(ny.getSendMessage());
 
     }

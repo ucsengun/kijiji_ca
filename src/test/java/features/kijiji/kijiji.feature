@@ -7,5 +7,5 @@ Feature: Kijiji Ürün Sayfası
     And Açılan sayfada Cars and vehicles seçeneği başlığındaki Cars and trucks a tıkla.
     And Price aralığını beş bin beş yüz elli beş ile beş bin beş yüz elli dokuz olarak doldur ve ara.
     And Gelen sonuçlarda en üstteki seçeneğe tıkla.
-    Then Açılan sayfadaki mesaj gönder butonuna tıkla.
+    And Açılan sayfadaki mesaj gönder butonuna tıkla.
     Then Giriş penceresinin açıldığını doğrula.

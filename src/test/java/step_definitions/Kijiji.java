@@ -16,21 +16,7 @@ public class Kijiji {
     Kijiji_POM ny = new Kijiji_POM();
 
     private JavascriptExecutor jsExecutor;
-    //private WebDriver driver;
 
-
-//    @Then("favorilere ekle")
-//    public void favorilereEkle() {
-//        ny.clickMethod(ny.getAddFavourites());
-//
-//        ny.clickMethod(ny.getPostFacebook());
-//        ny.clickMethod(ny.getPostTwitter());
-//        ny.clickMethod(ny.getPostPinterest());
-//        ny.clickMethod(ny.getPrint());
-//        ny.clickMethod(ny.getMailFriend());
-//        ny.clickMethod(ny.getShareWithFacebookMessenger());
-//        ny.clickMethod(ny.getSendMessage());
-//    }
 
     @Given("Kijiji websitesine eriş.")
     public void kijijiWebsitesineEriş() {

@@ -45,10 +45,10 @@ public class Kijiji_POM extends MyMethods {
     private WebElement print;
     @FindBy(xpath = "//button[@type='submit'][normalize-space()='Send message']")
     private WebElement sendMessage;
-    @FindBy (xpath = "//input[@name='ogrenimLisansBolum']")
-    private WebElement bolumLisans;
-    @FindBy(xpath = "//input[@name='ogrenimLisansTarih']")
-    private WebElement baslamaBitisTarihiLisans;
+    @FindBy (xpath = "//h3[normalize-space()='Sign in to send your message']")
+    private WebElement signInWindow;
+    @FindBy(xpath = "//h3[normalize-space()='Sign in to favourite']")
+    private WebElement signInToFavourite;
 
     public WebElement getOntario() {
         return ontario;
@@ -119,5 +119,11 @@ public class Kijiji_POM extends MyMethods {
         return sendMessage;
     }
 
+    public WebElement getSignInWindow() {
+        return signInWindow;
+    }
 
+    public WebElement getSignInToFavourite() {
+        return signInToFavourite;
+    }
 }

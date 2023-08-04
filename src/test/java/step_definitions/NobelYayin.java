@@ -44,8 +44,15 @@ public class NobelYayin {
         ny.clickMethod(ny.getSearchVehicles());
     }
 
-    @Then("Kayıt formunun alt kısmında yer alan Gönder butonuna tıkla.")
+    @And("Kayıt formunun alt kısmında yer alan Gönder butonuna tıkla.")
     public void kayıtFormununAltKısmındaYerAlanGönderButonunaTıkla() {
         ny.clickMethod(ny.getCar());
     }
+
+
+    @Then("favorilere ekle")
+    public void favorilereEkle() {
+        ny.clickMethod(ny.getAddFavourites());
+    }
+
 }

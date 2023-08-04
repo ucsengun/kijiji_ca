@@ -2,18 +2,33 @@ Feature: Nobel Yayin İnsan Kaynakları
 
 
   Scenario: Ürün İlanını Twitter'da Paylaş Doğrulaması
-    Given Nobel Yayin websitesine eriş.
-    And Websayfasını aşağıya doğru kaydır.
-    And Ana sayfanın site haritası kısmında yer alan İnsan Kaynakları butonuna tıkla.
-    And Açılan kayıt formundaki bütün girdileri yazarken geçersiz doğum tarihi ile doldur.
-    Then Kayıt formunun alt kısmında yer alan Gönder butonuna tıkla.
+    Given Kijiji websitesine eriş.
+    And Adres olarak Hamiton seç.
+    And Açılan sayfada Cars and vehicles seçeneği başlığındaki Cars and trucks a tıkla.
+    And Price aralığını 5555 ile 5559 olarak doldur ve ara.
+    And Gelen sonuçlarda en üstteki seçeneğe tıkla.
+    Then Açılan sayfadaki twitter logosuna tıkla.
 
   Scenario: Ürün İlanını Pinterest'te Paylaş Doğrulaması
-    Given Nobel Yayin websitesine eriş.
-    And Websayfasını aşağıya doğru kaydır.
-    And Ana sayfanın site haritası kısmında yer alan İnsan Kaynakları butonuna tıkla.
-    And Açılan kayıt formundaki bütün girdileri yazarken geçersiz doğum tarihi ile doldur.
-    Then Kayıt formunun alt kısmında yer alan Gönder butonuna tıkla.
+    Given Kijiji websitesine eriş.
+    And Adres olarak Hamiton seç.
+    And Açılan sayfada Cars and vehicles seçeneği başlığındaki Cars and trucks a tıkla.
+    And Price aralığını 5555 ile 5559 olarak doldur ve ara.
+    And Gelen sonuçlarda en üstteki seçeneğe tıkla.
+    Then Açılan sayfadaki pinterest butonuna tıkla.
 
-  Ürün İlanını E-mail İle Paylaş Doğrulaması
-  Ürün İlanını Yazdır Doğrulaması
+  Scenario: Ürün İlanını E-mail İle Paylaş Doğrulaması
+    Given Kijiji websitesine eriş.
+    And Adres olarak Hamiton seç.
+    And Açılan sayfada Cars and vehicles seçeneği başlığındaki Cars and trucks a tıkla.
+    And Price aralığını 5555 ile 5559 olarak doldur ve ara.
+    And Gelen sonuçlarda en üstteki seçeneğe tıkla.
+    Then Açılan sayfadaki email butonuna tıkla.
+
+  Scenario: Ürün İlanını Yazdır Doğrulaması
+    Given Kijiji websitesine eriş.
+    And Adres olarak Hamiton seç.
+    And Açılan sayfada Cars and vehicles seçeneği başlığındaki Cars and trucks a tıkla.
+    And Price aralığını 5555 ile 5559 olarak doldur ve ara.
+    And Gelen sonuçlarda en üstteki seçeneğe tıkla.
+    Then Açılan sayfadaki yazdırma logosuna tıkla.
